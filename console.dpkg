@@ -1,0 +1,11 @@
+fbi						install
+fbset						install
+fim         install
+fontconfig					install
+fontconfig-config				install
+fonts-inconsolata				install
+mupdf-tools					install
+pdftk						install
+vim-nox						install
+w3c-markup-validator				install
+zgv          install
