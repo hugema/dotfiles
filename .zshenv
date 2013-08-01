@@ -20,6 +20,7 @@ export GIT_PAGER="cat"
 export CORE_NUMBER=`grep -c processor /proc/cpuinfo`
 export LS_OPTIONS="--color=tty"
 export PAGER="less"
+export EDITOR="vim"
 
 if [ -x /usr/bin/dircolors -a -r /etc/DIR_COLORS ]
 then
