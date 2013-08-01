@@ -19,6 +19,7 @@ if [ $ZSH_PATH ]; then
 fi
 ln -f -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -f -s ~/.dotfiles/.zshenv ~/.zshenv
+ln -f -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -f -s ~/.dotfiles/.vimrc ~/.vimrc
 if [ -d ~/.vim/bundle/vundle ]; then
   cd ~/.vim/bundle/vundle; git pull origin
