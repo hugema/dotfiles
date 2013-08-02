@@ -1,142 +1,139 @@
-ack-grep					install
-adduser						install
-antiword					install
-apt						install
-apt-utils     install
-at						install
-atop						install
-bc						install
-binutils					install
-bison						install
-bsd-mailx					install
-bsdmainutils					install
-bsdutils					install
-build-essential					install
-bzip2						install
-ca-certificates					install
-ca-certificates-java				install
-console-setup					install
-console-setup-linux				install
-coreutils					install
-cron						install
-cryptsetup-bin					install
-csstidy						install
-curl						install
-dc						install
-debianutils					install
-deborphan					install
-defoma						install
-dictionaries-common				install
-diffstat					install
-diffutils					install
-dnsutils					install
-dosfstools					install
-ed						install
-elinks						install
-enchant						install
-etckeeper					install
-extract						install
-exuberant-ctags					install
-file						install
-findutils					install
-flex						install
-ftp						install
-fuse						install
-gawk						install
-gcal						install
-gcc						install
-git						install
-grep						install
-groff						install
-gzip						install
-hal						install
-happy						install
-hdparm						install
-hexer						install
-hostname					install
-html2text					install
-htop						install
-hwdata						install
-hwinfo						install
-iftop						install
-ifupdown					install
-info						install
-iotop						install
-iputils-ping					install
-iso-codes					install
-kbd						install
-kernel-package					install
-keyboard-configuration				install
-keyutils					install
-less						install
-lftp						install
-links						install
-links2						install
-locales						install
-locate						install
-login						install
-logrotate					install
-lshw						install
-lsof						install
-ltrace						install
-lynx-cur					install
-make						install
-makedev						install
-mawk						install
-menu						install
-mercurial					install
-mlocate						install
-mosh						install
-mount						install
-mtr						install
-mutt						install
-net-tools					install
-ntp						install
-openssh-blacklist				install
-openssh-blacklist-extra				install
-openssh-client					install
-openssh-server					install
-openssl						install
-patch						install
-pbzip2						install
-procps						install
-psmisc						install
-rar						install
-recode						install
-rsnapshot					install
-rsync						install
-rsyslog						install
-screen						install
-sed						install
-ssh						install
-ssh-askpass					install
-sshfs						install
-ssl-cert					install
-strace						install
-sudo						install
-tar						install
-tcpd						install
-tcpdump						install
-telnet						install
-testdisk					install
-tidy						install
-time						install
-tmux						install
-traceroute					install
-tree						install
-tzdata						install
-unp						install
-unrar						install
-unzip						install
-util-linux					install
-vim						install
-w3m						install
-wamerican					install
-wget						install
-whois						install
-xmlstarlet					install
-xsltproc					install
-xutils-dev					install
-xz-utils					install
-zip						install
-zsh						install
+ack-grep
+adduser
+antiword
+apt
+apt-utils
+at
+atop
+bc
+binutils
+bison
+bsd-mailx
+bsdmainutils
+bsdutils
+build-essential
+bzip2
+ca-certificates
+ca-certificates-java
+console-setup
+console-setup-linux
+coreutils
+cron
+cryptsetup-bin
+csstidy
+curl
+dc
+debianutils
+deborphan
+dictionaries-common
+diffstat
+diffutils
+dnsutils
+dosfstools
+ed
+elinks
+enchant
+etckeeper
+extract
+exuberant-ctags
+file
+findutils
+flex
+ftp
+fuse
+gawk
+gcal
+gcc
+git
+grep
+groff
+gzip
+hal
+happy
+hdparm
+hexer
+hostname
+html2text
+htop
+hwdata
+hwinfo
+iftop
+ifupdown
+info
+iotop
+iputils-ping
+iso-codes
+kbd
+kernel-package
+keyboard-configuration
+keyutils
+less
+lftp
+links
+links2
+locales
+locate
+login
+logrotate
+lshw
+lsof
+ltrace
+lynx-cur
+make
+makedev
+mawk
+menu
+mercurial
+mlocate
+mosh
+mount
+mtr
+mutt
+net-tools
+ntp
+openssh-blacklist
+openssh-blacklist-extra
+openssh-client
+openssh-server
+openssl
+patch
+pbzip2
+procps
+psmisc
+recode
+rsnapshot
+rsync
+rsyslog
+screen
+sed
+ssh
+ssh-askpass
+sshfs
+ssl-cert
+strace
+sudo
+tar
+tcpd
+tcpdump
+telnet
+testdisk
+tidy
+time
+tmux
+traceroute
+tree
+tzdata
+unp
+unzip
+util-linux
+vim
+w3m
+wamerican
+wget
+whois
+xmlstarlet
+xsltproc
+xutils-dev
+xz-utils
+zip
+zsh

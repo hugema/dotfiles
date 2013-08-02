@@ -1,15 +1,15 @@
 #!/bin/sh
 sudo sed -i 's/ftp.us.debian.org/ftp.de.debian.org/' /etc/apt/sources.list
 sudo apt-get -y update
-sudo dpkg --set-selections < ~/.dotfiles/core.dpkg
+cat ~/.dotfiles/core.dpkg | xargs sudo apt-get -y install
 for var in "$@"
 do
   if [ -f ~/.dotfiles/$var.dpkg ]; then
-    sudo dpkg --set-selections < ~/.dotfiles/$var.dpkg
+    cat ~/.dotfiles/$var.dpkg | xargs sudo apt-get -y install
   fi
 done
 sudo apt-get -y upgrade
-sudo apt-get -y -u dselect-upgrade
+sudo apt-get -y dist-upgrade
 ZSH_PATH=`which zsh | cut -d " " -f 3-`
 USER_SHELL=`grep $USER /etc/passwd | cut -d ":" -f 7-`
 if [ $ZSH_PATH ]; then
