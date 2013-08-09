@@ -106,6 +106,7 @@ rsync
 rsyslog
 screen
 sed
+spidermonkey-bin
 ssh
 ssh-askpass
 sshfs
