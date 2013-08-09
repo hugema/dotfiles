@@ -17,3 +17,5 @@
   la = log --graph --pretty='%Cred%h%Creset %s %Cgreen(%cr)%Creset%C(yellow)%d%Creset'
   ls = log -n 20 --graph --pretty='%Cred%h%Creset %s %Cgreen(%cr)%Creset%C(yellow)%d%Creset'
   v = !vi $(git-ls-files -m -z)
+[core]
+	excludesfile = ~/.git_global_ignore
