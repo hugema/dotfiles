@@ -1,0 +1,19 @@
+[user]
+	name = Hugues Marilleau
+	email = hugues@marilleau.com
+[alias]
+  a = add
+  amend = commit --amend
+  s = status
+  df = diff
+  co = checkout
+  c = commit
+  br = branch
+  who = shortlog -sne
+  changes = diff --name-status
+  dic = diff --cached
+  diffstat = diff --stat
+  l = log --reverse --pretty='%Cred%h%Creset %s %Cgreen(%cr)%Creset%C(yellow)%d%Creset'
+  la = log --graph --pretty='%Cred%h%Creset %s %Cgreen(%cr)%Creset%C(yellow)%d%Creset'
+  ls = log -n 20 --graph --pretty='%Cred%h%Creset %s %Cgreen(%cr)%Creset%C(yellow)%d%Creset'
+  vi = !vi $(git-ls-files -m -z)
