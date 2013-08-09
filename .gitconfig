@@ -16,4 +16,4 @@
   l = log --reverse --pretty='%Cred%h%Creset %s %Cgreen(%cr)%Creset%C(yellow)%d%Creset'
   la = log --graph --pretty='%Cred%h%Creset %s %Cgreen(%cr)%Creset%C(yellow)%d%Creset'
   ls = log -n 20 --graph --pretty='%Cred%h%Creset %s %Cgreen(%cr)%Creset%C(yellow)%d%Creset'
-  vi = !vi $(git-ls-files -m -z)
+  v = !vi $(git-ls-files -m -z)
