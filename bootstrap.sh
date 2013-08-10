@@ -1,4 +1,7 @@
 #!/bin/sh
+ZSH_PATH=`which zsh | cut -d " " -f 3-`
+USER_SHELL=`grep $USER /etc/passwd | cut -d ":" -f 7-`
+
 sudo sed -i 's/ftp.us.debian.org/ftp.de.debian.org/' /etc/apt/sources.list
 sudo apt-get -y update
 cat ~/.dotfiles/core.dpkg | xargs sudo apt-get -y install
@@ -10,8 +13,6 @@ do
 done
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
-ZSH_PATH=`which zsh | cut -d " " -f 3-`
-USER_SHELL=`grep $USER /etc/passwd | cut -d ":" -f 7-`
 if [ $ZSH_PATH ]; then
   if [ $USER_SHELL != $ZSH_PATH ]; then
     chsh -s $ZSH_PATH
@@ -29,3 +30,13 @@ else
   git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 fi
 vim +BundleInstall +qall
+
+for var in "$@"
+do
+  if [ $var = "xwindow" ]; then
+    ln -f -s ~/.dotfiles/.xinitrc ~/.xinitrc
+    ln -f -s ~/.dotfiles/.Xdefaults ~/.Xdefaults
+    ln -f -s ~/.dotfiles/.xmodmap ~/.xmodmap
+    xmonad --recompile
+  fi
+done

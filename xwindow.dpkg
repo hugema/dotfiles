@@ -4,6 +4,7 @@ gimp
 gnumeric
 icedove
 iceweasel
+libreoffice
 imagemagick
 numlockx
 pdfmod
@@ -11,6 +12,8 @@ uzbl
 wkhtmltopdf
 xfstt
 xine-ui
+xinit
+xmonad
 xserver-xorg
 xterm
 xul-ext-nostalgy

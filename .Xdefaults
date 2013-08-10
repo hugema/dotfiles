@@ -1,0 +1,10 @@
+UXTerm*faceName:          inconsolata
+UXTerm*faceSize:          16
+UXTerm*background:       black
+UXTerm*foreground:       white
+UXTerm*pointerColor:     green
+UXTerm*saveLines:        15000
+Xft.hinting:            true
+Xft.hintstyle:          hintfull
+Xft.antialias:          rgba
+Xft.rgba:               rgb

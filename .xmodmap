@@ -1,0 +1,20 @@
+keycode  46 = l L bar notsign bar notsign
+keycode 65 = space space space space space
+
+remove Lock = Caps_Lock
+keysym Caps_Lock = Control_L
+add Control = Control_L
+
+keycode 173=F7
+keycode 172=F8
+keycode 171=F9
+keycode 121=F10
+keycode 122=F11
+keycode 123=F12
+keycode 191=F13
+keycode 192=F14
+keycode 193=F15
+keycode 194=F16
+keycode 195=F17
+keycode 196=F18
+keycode 197=F19
