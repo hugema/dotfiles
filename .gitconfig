@@ -4,7 +4,7 @@
 [alias]
   a = add
   amend = commit --amend
-  s = status
+  s = status --short
   df = diff
   co = checkout
   c = commit
