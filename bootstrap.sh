@@ -37,6 +37,8 @@ do
     ln -f -s ~/.dotfiles/.xinitrc ~/.xinitrc
     ln -f -s ~/.dotfiles/.Xdefaults ~/.Xdefaults
     ln -f -s ~/.dotfiles/.xmodmap ~/.xmodmap
+    mkdir ~/.xmonad/
+    ln -f -s ~/.dotfiles/xmonad.hs ~/.xmonad/xmonad.hs
     xmonad --recompile
   fi
 done
