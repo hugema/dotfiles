@@ -31,6 +31,8 @@ else
 fi
 vim +BundleInstall +qall
 
+vagrant plugin install vagrant-butcher
+
 for var in "$@"
 do
   if [ $var = "xwindow" ]; then
