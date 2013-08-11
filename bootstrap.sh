@@ -31,8 +31,6 @@ else
 fi
 vim +BundleInstall +qall
 
-vagrant plugin install vagrant-butcher
-
 for var in "$@"
 do
   if [ $var = "xwindow" ]; then
@@ -42,5 +40,10 @@ do
     mkdir ~/.xmonad/
     ln -f -s ~/.dotfiles/xmonad.hs ~/.xmonad/xmonad.hs
     xmonad --recompile
+  fi
+  if [ $var = "dev" ]; then
+    vagrant plugin install vagrant-butcher
+    sudo gem install digital_ocean
+    sudo gem install knife-digital_ocean
   fi
 done
