@@ -43,6 +43,7 @@ do
   fi
   if [ $var = "dev" ]; then
     vagrant plugin install vagrant-butcher
+    vagrant plugin install vagrant-vbox-snapshot
     sudo gem install digital_ocean
     sudo gem install knife-digital_ocean
   fi
