@@ -30,6 +30,7 @@ else
   git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 fi
 vim +BundleInstall +qall
+sudo gem install tmuxinator
 
 for var in "$@"
 do
