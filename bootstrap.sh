@@ -10,6 +10,9 @@ do
   if [ -f ~/.dotfiles/$var.dpkg ]; then
     cat ~/.dotfiles/$var.dpkg | xargs sudo apt-get -y install
   fi
+  if [ -f ~/.dotfiles/$var ]; then
+    cat ~/.dotfiles/$var | xargs sudo apt-get -y install
+  fi
 done
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
