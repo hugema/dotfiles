@@ -182,5 +182,5 @@ compctl -g '*.zip *.ZIP' + -g '*' unzip
 compctl -g '*.rar' + -g '*' unrar
 compctl -g '*.bz2' + -g '*' bunzip2
 compctl -g '*.dvi' + -g '*' xdvi dvips
-compctl -g '*.xls *.csv' + -g '*' gnumeric
+compctl -g '*.xls *.xslx *.csv' + -g '*' gnumeric
 compctl -g '*.pdf' + -g '*' evince
