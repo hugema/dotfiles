@@ -14,8 +14,8 @@ do
     cat ~/.dotfiles/$var | xargs sudo apt-get -y install
   fi
 done
-sudo apt-get -y upgrade
-sudo apt-get -y dist-upgrade
+# sudo apt-get -y upgrade
+# sudo apt-get -y dist-upgrade
 if [ $ZSH_PATH ]; then
   if [ $USER_SHELL != $ZSH_PATH ]; then
     chsh -s $ZSH_PATH
