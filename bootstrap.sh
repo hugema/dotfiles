@@ -1,6 +1,4 @@
 #!/bin/sh
-ZSH_PATH=`which zsh | cut -d " " -f 3-`
-USER_SHELL=`grep $USER /etc/passwd | cut -d ":" -f 7-`
 
 if [ "$1" = "-i" ]; then
   sudo sed -i 's/us.debian.org/de.debian.org/' /etc/apt/sources.list
@@ -19,11 +17,6 @@ if [ "$1" = "-i" ]; then
   # sudo apt-get -y dist-upgrade
 fi
 
-if [ $ZSH_PATH ]; then
-  if [ $USER_SHELL != $ZSH_PATH ]; then
-    chsh -s $ZSH_PATH
-  fi
-fi
 ln -f -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -f -s ~/.dotfiles/.zshenv ~/.zshenv
 ln -f -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
