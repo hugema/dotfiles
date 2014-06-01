@@ -2,20 +2,23 @@
 ZSH_PATH=`which zsh | cut -d " " -f 3-`
 USER_SHELL=`grep $USER /etc/passwd | cut -d ":" -f 7-`
 
-sudo sed -i 's/ftp.us.debian.org/ftp.de.debian.org/' /etc/apt/sources.list
-sudo apt-get -y update
-cat ~/.dotfiles/core.dpkg | xargs sudo apt-get -y install
-for var in "$@"
-do
-  if [ -f ~/.dotfiles/$var.dpkg ]; then
-    cat ~/.dotfiles/$var.dpkg | xargs sudo apt-get -y install
-  fi
-  if [ -f ~/.dotfiles/$var ]; then
-    cat ~/.dotfiles/$var | xargs sudo apt-get -y install
-  fi
-done
-# sudo apt-get -y upgrade
-# sudo apt-get -y dist-upgrade
+if [ "$1" = "-i" ]; then
+  sudo sed -i 's/us.debian.org/de.debian.org/' /etc/apt/sources.list
+  sudo apt-get -y update
+  cat ~/.dotfiles/core.dpkg | xargs sudo apt-get -y install
+  for var in "$@"
+  do
+    if [ -f ~/.dotfiles/$var.dpkg ]; then
+      cat ~/.dotfiles/$var.dpkg | xargs sudo apt-get -y install
+    fi
+    if [ -f ~/.dotfiles/$var ]; then
+      cat ~/.dotfiles/$var | xargs sudo apt-get -y install
+    fi
+  done
+  # sudo apt-get -y upgrade
+  # sudo apt-get -y dist-upgrade
+fi
+
 if [ $ZSH_PATH ]; then
   if [ $USER_SHELL != $ZSH_PATH ]; then
     chsh -s $ZSH_PATH
