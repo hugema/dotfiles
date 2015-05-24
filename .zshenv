@@ -94,6 +94,7 @@ alias unp='unp -U'
 alias g='git'
 alias gexport='git checkout-index -a -f --prefix='
 alias va='vagrant'
+alias lo='libreoffice'
 alias debup='sudo apt-get update'
 alias debug='sudo apt-get upgrade && sudo apt-get dist-upgrade'
 alias debi='sudo apt-get install'
@@ -119,9 +120,13 @@ alias kmake='sudo make-kpkg --append-to-version=.$(date +%Y%m%d%k%M%S) --revisio
 
 alias chmodfiles='find $* -type f -exec chmod 644 {} \;'
 alias chmoddir='find $* -type d -exec chmod 755 {} \;'
-function ss {
+function mp3norm {
 	rename 'y/ /_/' * 2> /dev/null
 	rename "y/\'/_/" * 2> /dev/null
+  rename 's/_(\w)/_\u$1/g' * 2> /dev/null
+  rename "s/\(/-_/" * 2> /dev/null
+  rename "s/\)//" * 2> /dev/null
+  rename 's/^([123456789])_/0$1_/g' * 2> /dev/null
 }
 function psgrep() { ps axuf | grep -v grep | grep "$@" -i --color=auto; }
 

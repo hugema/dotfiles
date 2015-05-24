@@ -167,4 +167,7 @@ Bundle 'godlygeek/tabular'
 " Bundle 'Valloric/YouCompleteMe'
 Bundle 'bitc/hdevtools'
 Bundle 'bitc/vim-hdevtools'
-
+Bundle 'tpope/vim-markdown'
+Bundle 'vim-pandoc/vim-pandoc'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'nbouscal/vim-stylish-haskell'
