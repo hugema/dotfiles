@@ -14,17 +14,17 @@ bsdutils
 build-essential
 bzip2
 ca-certificates
-ca-certificates-java
 console-setup
 console-setup-linux
 coreutils
 cron
+cron-apt
 cryptsetup-bin
-csstidy
 curl
 dc
 debianutils
 deborphan
+debsecan
 dictionaries-common
 diffstat
 diffutils
@@ -99,7 +99,10 @@ openssl
 patch
 pbzip2
 procps
+postfix
 psmisc
+python
+python-pip
 recode
 rsnapshot
 rsync
@@ -107,7 +110,6 @@ rsyslog
 ruby
 screen
 sed
-spidermonkey-bin
 ssh
 ssh-askpass
 sshfs
@@ -131,7 +133,6 @@ util-linux
 vim
 w3m
 wamerican
-wget
 whois
 xmlstarlet
 xsltproc

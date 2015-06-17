@@ -34,6 +34,9 @@ else
 fi
 vim +BundleInstall +qall
 sudo gem install tmuxinator
+sudo debsecan-create-cron
+sudo sh -c 'grep security /etc/apt/sources.list > /etc/apt/security.sources.list'
+cat ~/.dotfiles/cron-apt.config | sudo tee /etc/cron-apt/config > /dev/null
 
 for var in "$@"
 do
@@ -46,9 +49,8 @@ do
     xmonad --recompile
   fi
   if [ $var = "dev" ]; then
-    vagrant plugin install vagrant-butcher
+    sudo pip install ansible
     vagrant plugin install vagrant-vbox-snapshot
     sudo gem install digital_ocean
-    sudo gem install knife-digital_ocean
   fi
 done
