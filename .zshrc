@@ -182,5 +182,7 @@ compctl -g '*.zip *.ZIP' + -g '*' unzip
 compctl -g '*.rar' + -g '*' unrar
 compctl -g '*.bz2' + -g '*' bunzip2
 compctl -g '*.dvi' + -g '*' xdvi dvips
-compctl -g '*.xls *.csv' + -g '*' gnumeric
+compctl -g '*.xls *.xlsx *.csv' + -g '*' gnumeric
+compctl -g '*.xls *.xlsx *.csv *.doc *.docx *.ppt *pptx' + -g '*' libreoffice
+compctl -g '*.xls *.xlsx *.csv *.doc *.docx *.ppt *pptx' + -g '*' lo
 compctl -g '*.pdf' + -g '*' evince
