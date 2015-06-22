@@ -59,8 +59,8 @@ function! InsertTabWrapper(direction)
     endif
 endfunction
 
-inoremap <tab> <c-r>=InsertTabWrapper ("forward")<cr>
-inoremap <s-tab> <c-r>=InsertTabWrapper ("backward")<cr> 
+inoremap <tab> <c-r>=InsertTabWrapper('forward')<cr>
+inoremap <s-tab> <c-r>=InsertTabWrapper('backward')<cr>
 
 nmap <F3> <ESC>:call LoadSession()<CR>
 let s:sessionloaded = 0
@@ -154,7 +154,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'vim-scripts/dbext.vim'
 Bundle 'scrooloose/syntastic'
-" Bundle 'ervandew/supertab'
+Bundle 'ervandew/supertab'
 Bundle 'vim-scripts/SQLComplete.vim'
 Bundle 'vim-scripts/simplefold'
 Bundle 'vim-scripts/showhide.vim'
