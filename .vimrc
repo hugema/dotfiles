@@ -113,7 +113,7 @@ nnoremap <c-p> /%\u.\{-1,}%<cr>c/%/e<cr>
 inoremap <c-p> <ESC>/%\u.\{-1,}%<cr>c/%/e<cr>
 set cpoptions-=a
 
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 nmap <Leader>o :set paste!
 " Ctrl E to switch to last acceded buffer
@@ -134,40 +134,65 @@ highlight Normal ctermbg=None
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+" Plug-in manager for Vim
 Bundle 'gmarik/vundle'
+" Disables arrow & hjkl keys
 Bundle 'wikitopian/hardmode'
-Bundle 'skalnik/vim-vroom'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-rake'
-Bundle 'vim-scripts/Textile-for-VIM'
-Bundle 'othree/html5-syntax.vim'
-Bundle 'othree/html5.vim'
-Bundle 'vim-scripts/Vimerl'
-Bundle 'tpope/vim-haml'
-Bundle 'vim-scripts/extradite.vim'
+" History of previous yanks
 Bundle 'vim-scripts/YankRing.vim'
+" Fuzzy file, buffer, mru, tag finder
 Bundle 'kien/ctrlp.vim'
-" Bundle 'hallettj/jslint.vim'
-Bundle 'tpope/vim-fugitive'
+" Switch segments of text
 Bundle 'AndrewRadev/switch.vim'
+" TextMate's snippets features
 Bundle 'msanders/snipmate.vim'
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'vim-scripts/dbext.vim'
+" Syntax checking hacks for vim
 Bundle 'scrooloose/syntastic'
-Bundle 'ervandew/supertab'
-Bundle 'vim-scripts/SQLComplete.vim'
+" Space-optimized, configurable folds
 Bundle 'vim-scripts/simplefold'
+" Quickly show/hide lines of interest
 Bundle 'vim-scripts/showhide.vim'
-Bundle 'kikijump/tslime.vim'
-Bundle 'Perldoc.vim'
-Bundle 'christoomey/vim-tmux-navigator'
+" Vim plugin for the_silver_searcher
 Bundle 'rking/ag.vim'
+" Quoting/parenthesizing made simple
 Bundle 'tpope/vim-surround'
+" Text filtering and alignment
 Bundle 'godlygeek/tabular'
-" Bundle 'Valloric/YouCompleteMe'
-Bundle 'bitc/hdevtools'
-Bundle 'bitc/vim-hdevtools'
+" Use <Tab> for completion
+Bundle 'ervandew/supertab'
+" SQL code completion system
+Bundle 'vim-scripts/SQLComplete.vim'
+
+" Dev
+" Source code browser
+Bundle 'vim-scripts/taglist.vim'
+" Database access to many dbms
+Bundle 'vim-scripts/dbext.vim'
+
+" Markup
+" Textile syntax highlighting
+Bundle 'vim-scripts/Textile-for-VIM'
+" Haml, Sass and SCSS runtime files
+Bundle 'tpope/vim-haml'
+" Markdown runtime files
 Bundle 'tpope/vim-markdown'
+" Pandoc integration for vim
 Bundle 'vim-pandoc/vim-pandoc'
+
+" Git
+" Git wrapper 
+Bundle 'tpope/vim-fugitive'
+" Git commit browser
+Bundle 'vim-scripts/extradite.vim'
+" Shows a git diff
 Bundle 'airblade/vim-gitgutter'
-Bundle 'nbouscal/vim-stylish-haskell'
+
+" Send command from vim to tmux
+Bundle 'kikijump/tslime.vim'
+" Navigation between tmux and vim
+Bundle 'christoomey/vim-tmux-navigator'
+
+" Bundle 'hallettj/jslint.vim'            " Vim plugin for running JSLint
+" Bundle 'othree/html5-syntax.vim'        " HTML5 omnicomplete and syntax
+" Bundle 'othree/html5.vim'               " HTML5 omnicomplete and syntax
+" Bundle 'Valloric/YouCompleteMe'         " Completion plugin

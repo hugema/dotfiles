@@ -19,3 +19,5 @@
   v = !vi $(git-ls-files -m -z)
 [core]
 	excludesfile = ~/.git_global_ignore
+[push]
+	default = simple
