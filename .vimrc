@@ -187,8 +187,6 @@ Bundle 'vim-scripts/extradite.vim'
 " Shows a git diff
 Bundle 'airblade/vim-gitgutter'
 
-" Send command from vim to tmux
-Bundle 'kikijump/tslime.vim'
 " Navigation between tmux and vim
 Bundle 'christoomey/vim-tmux-navigator'
 
